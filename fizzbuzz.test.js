@@ -1,11 +1,7 @@
-// using functions exported from './fizzbuzz'
-const {
-  fizzbuzz,
-  isFizz,
-  isBuzz,
-  isFizzbuzz,
-  toFizzbuzz,
-} = require("./fizzbuzz");
+// I haven't tried to get jest tests working yet with ES6 modules.
+// See https://jestjs.io/docs/ecmascript-modules for experimental support.
+
+import { fizzbuzz, isFizz, isBuzz, isFizzbuzz, toFizzbuzz } from "./fizzbuzz";
 
 test("fizbuzz - returns an array representing the fizzbuzz sequence up to that number", () => {
   expect(fizzbuzz(1)).toEqual([1]);

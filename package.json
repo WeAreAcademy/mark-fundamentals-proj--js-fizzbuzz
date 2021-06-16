@@ -1,8 +1,10 @@
 {
   "name": "mark-fundamentals-proj--js-fizzbuzz",
   "version": "0.0.1",
+  "type": "module",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node main"
   },
   "license": "CC-BY-NC-ND-4.0",
   "dependencies": {
