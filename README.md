@@ -45,7 +45,21 @@ Node.js comes in different versions - so we'll use something called Node Version
 
 [Here's the `nvm` documentation](https://github.com/nvm-sh/nvm). It has instructions on installation, verifying installation and troubleshooting common problems. Note: you may need to restart your terminal in order to use `nvm` / verify that it is installed.
 
-Once you've installed `nvm` (and verified its installation), [follow the `nvm` docs on installing the latest version of Node.js](https://github.com/nvm-sh/nvm#usage).
+Once you've installed `nvm` (and verified its installation), use it to install the most recent LTS (long-term support) version of Node, with this command:
+
+```nvm install --lts```
+
+Note that the most recent LTS version is NOT the same thing as the latest version.
+
+Confirm that the node command is now installed and is finding the right version:
+
+```bash
+node -v
+```
+
+This command should report the version matching the LTS version on https://nodejs.org (and _not_ the "current" version).
+
+Confirm by reading the [`nvm` usage docs](https://github.com/nvm-sh/nvm#usage) that you can find the documentation on installing a version of node under nvm.
 
 ### Running JavaScript in the terminal
 
